@@ -13,7 +13,7 @@ This system should meet the following requirement:
 
 **Implementation**
 
-Since the control system should simultaneously read ADC values and send them to user, receive and process commands from touch panel, and communicate with motor, a Real Time Operating System (RTOS) RtThread was adopted as the framework of the software. The RtThread can facilitate thread creation and it provided many useful thread synchronization mechanism.
+Since the control system should simultaneously read ADC values and send them to user, receive and process commands from touch panel, and communicate with motor, a Real Time Operating System (RTOS) RtThread(https://www.rt-thread.io/) was adopted as the framework of the software. The RtThread can facilitate thread creation and it provided many useful thread synchronization mechanism.
 
 Every task was assigned to a dedicated thread, and all threads shared data through a global data structure. A very sketchy demonstration of this software is shown in Fig 2.
 
